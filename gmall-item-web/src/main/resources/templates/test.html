@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+      hello thymeleaf ! html的扩展标签<br />
+      for freedom ! <br />
+
+      取值：<input th:placeholder="${hello}" value="" th:value="${hello}"/><br />
+
+      循环：<input th:value="${str?.nickname}" th:each="str:${umsMembers}"/>
+      <div th:each="str:${list}">
+          <input th:value="${str}" />
+      </div>
+      <br />
+      判断：<input th:if="${if=='0'}" placeholder="这个输入框是存在的" />
+      <br />
+      调用js：<a th:href = "'javascript:a(\''+${num}+'\')'">点我</a>
+      <br />
+      包含：
+      <div th:include="a::b"></div>
+      复选框状态根据字段值变化：
+      <input type="checkbox" th:checked="(${isChecked=='1'}?true:false)" />
+
+      <script language="JavaScript">
+          function  a(num) {
+                alert(num);
+          }
+      </script>
+</body>
+</html>

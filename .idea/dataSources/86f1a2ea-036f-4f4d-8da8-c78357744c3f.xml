@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="atcrowdfunding-0225"/>
+    <schema id="4" parent="1" name="book"/>
+    <schema id="5" parent="1" name="cloud_db_one"/>
+    <schema id="6" parent="1" name="cloud_db_three"/>
+    <schema id="7" parent="1" name="cloud_db_two"/>
+    <schema id="8" parent="1" name="distributed-crowd"/>
+    <schema id="9" parent="1" name="girls"/>
+    <schema id="10" parent="1" name="information_schema"/>
+    <schema id="11" parent="1" name="mybatis"/>
+    <schema id="12" parent="1" name="myemployees"/>
+    <schema id="13" parent="1" name="mysql"/>
+    <schema id="14" parent="1" name="performance_schema"/>
+    <schema id="15" parent="1" name="springboot-0614"/>
+    <schema id="16" parent="1" name="test0225"/>
+    <table id="17" parent="2" name="table1">
+      <Comment>数据表1</Comment>
+    </table>
+    <table id="18" parent="2" name="table2">
+      <Comment>测试</Comment>
+    </table>
+    <column id="19" parent="17" name="Id">
+      <Position>1</Position>
+      <Comment>编号</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="17" name="Pid">
+      <Position>2</Position>
+      <Comment>父编号</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="21" parent="17" name="Rid">
+      <Position>3</Position>
+      <Comment>关联编号</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="22" parent="17" name="Name">
+      <Position>4</Position>
+      <Comment>名称</Comment>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="23" parent="17" name="Memo">
+      <Position>5</Position>
+      <Comment>注释</Comment>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="24" parent="17" name="TypeName">
+      <Position>6</Position>
+      <Comment>类名</Comment>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="25" parent="17" name="CreatorId">
+      <Position>7</Position>
+      <Comment>创建人编号</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="26" parent="17" name="CreatorName">
+      <Position>8</Position>
+      <Comment>创建人姓名</Comment>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="27" parent="17" name="CreateDate">
+      <Position>9</Position>
+      <Comment>创建日期</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="28" parent="17" name="DataLevel">
+      <Position>10</Position>
+      <Comment>数据级别 0正常 1审核中 2被否决 -1已删除 -2草稿</Comment>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="29" parent="17" name="OrderNo">
+      <Position>11</Position>
+      <Comment>排序号</Comment>
+      <DataType>double|0</DataType>
+    </column>
+    <key id="30" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="18" name="Id">
+      <Position>1</Position>
+      <Comment>编号</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="18" name="Pid">
+      <Position>2</Position>
+      <Comment>父编号</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="33" parent="18" name="Rid">
+      <Position>3</Position>
+      <Comment>关联编号</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="34" parent="18" name="Name">
+      <Position>4</Position>
+      <Comment>名称</Comment>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="35" parent="18" name="Memo">
+      <Position>5</Position>
+      <Comment>注释</Comment>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="36" parent="18" name="TypeName">
+      <Position>6</Position>
+      <Comment>类名</Comment>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="37" parent="18" name="CreatorId">
+      <Position>7</Position>
+      <Comment>创建人编号</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="38" parent="18" name="CreatorName">
+      <Position>8</Position>
+      <Comment>创建人姓名</Comment>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="39" parent="18" name="CreateDate">
+      <Position>9</Position>
+      <Comment>创建日期</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="40" parent="18" name="DataLevel">
+      <Position>10</Position>
+      <Comment>数据级别 0正常 1审核中 2被否决 -1已删除 -2草稿</Comment>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="41" parent="18" name="OrderNo">
+      <Position>11</Position>
+      <Comment>排序号</Comment>
+      <DataType>double|0</DataType>
+    </column>
+    <key id="42" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
