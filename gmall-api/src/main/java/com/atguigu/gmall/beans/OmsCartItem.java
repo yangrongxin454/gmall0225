@@ -5,7 +5,7 @@ import javax.persistence.Transient;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-
+//测试
 public class OmsCartItem implements Serializable{
 
     @Id
